@@ -1,0 +1,14 @@
+---
+galaxy_info:
+  author: APPUiO Team
+  description: Role configuring system-wide outgoing HTTP/HTTPS proxy
+  company: Puzzle ITC and VSHN
+  license: Apache License, Version 2.0
+  min_ansible_version: 2.2
+  platforms:
+  - name: EL
+    versions:
+    - 7
+  categories:
+  - system
+allow_duplicates: no

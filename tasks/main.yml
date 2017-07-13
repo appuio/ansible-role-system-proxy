@@ -1,0 +1,12 @@
+---
+- name: Write system-wide proxy config
+  template:
+    src: templates/proxy.sh.j2
+    dest: /etc/profile.d/proxy.sh
+  when: state != "absent"
+
+- name: Remove system-wide proxy config
+  file:
+    dest: /etc/profile.d/proxy.sh
+    state: absent
+  when: state == "absent"
